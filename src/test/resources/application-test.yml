@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  
+  h2:
+    console:
+      enabled: true
+
+jwt:
+  secret: test_secret_key_that_is_at_least_32_characters_long_for_testing_purposes_only
+  expiration-ms: 900000
+  refresh-expiration-ms: 2592000000
+
+admin:
+  password: testadmin123
+
+logging:
+  level:
+    com.evoke.auth: DEBUG
+    org.springframework.security: DEBUG

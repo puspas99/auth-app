@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+
+logging:
+  level:
+    com.evoke.auth: INFO
+    org.springframework.security: WARN
+    org.hibernate: WARN
+    org.hibernate.SQL: WARN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
+  endpoint:
+    health:
+      show-details: never
