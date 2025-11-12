@@ -1,4 +1,4 @@
-=== FILE: README.md ===
+
 # Auth App
 
 A Spring Boot 3 application implementing JWT-based authentication and authorization with refresh tokens and role-based access control.
